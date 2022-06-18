@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.license.antivirus.activities.scan.ScanActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarScan"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="264dp"
+        android:layout_height="222dp"
+        android:layout_marginBottom="32dp"
+        android:indeterminate="false"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/appsScanned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/progressNumeric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#08F6C7"
+        android:enabled="false"
+        android:text="@string/progress"
+        android:textColor="#0088FF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarScan"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarScan"
+        app:layout_constraintStart_toStartOf="@+id/progressBarScan"
+        app:layout_constraintTop_toTopOf="@+id/progressBarScan" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appsScanned"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/backHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarScan" />
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="stopScan"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appsScanned" />
+</androidx.constraintlayout.widget.ConstraintLayout>

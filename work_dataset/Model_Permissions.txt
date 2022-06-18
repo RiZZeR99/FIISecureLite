@@ -1,0 +1,75 @@
+Test results with 256 nodes first layer and 64 nodes last layer (expect the layer with sigmoid function):
+data_256_64={'loss': 0.7286839485168457, 'accuracy': 0.9052191972732544, 'precision': 0.9352890253067017, 'recall': 0.8770226240158081, 'f1-score': 0.9052186834256324, 'f2-score': 0.8880876059285224}
+//////////////////////////////
+
+
+Test results with 256 nodes first layer and 32 nodes last layer (expect the layer with sigmoid function):
+data_256_32={'loss': 0.41002440452575684, 'accuracy': 0.8392484188079834, 'precision': 0.9493136405944824, 'recall': 0.7273463010787964, 'f1-score': 0.8236367268876149, 'f2-score': 0.7630282021350347}
+//////////////////////////////
+
+
+Test results with 256 nodes first layer and 16 nodes last layer (expect the layer with sigmoid function):
+data_256_16={'loss': 0.4540802538394928, 'accuracy': 0.7870563864707947, 'precision': 0.9776315689086914, 'recall': 0.6011326909065247, 'f1-score': 0.7444885071793813, 'f2-score': 0.6512971944822548}
+//////////////////////////////
+
+
+Test results with 256 nodes first layer and 8 nodes last layer (expect the layer with sigmoid function):
+data_256_8={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 512 nodes first layer and 64 nodes last layer (expect the layer with sigmoid function):
+data_512_64={'loss': 0.6915070414543152, 'accuracy': 0.4864300489425659, 'precision': 1.0, 'recall': 0.004854368977248669, 'f1-score': 0.009661826223189696, 'f2-score': 0.006060604603666832}
+//////////////////////////////
+
+
+Test results with 512 nodes first layer and 32 nodes last layer (expect the layer with sigmoid function):
+data_512_32={'loss': 0.3910628855228424, 'accuracy': 0.8697286248207092, 'precision': 0.8725806474685669, 'recall': 0.8754045367240906, 'f1-score': 0.8739898110858724, 'f2-score': 0.8748380972211444}
+//////////////////////////////
+
+
+Test results with 512 nodes first layer and 16 nodes last layer (expect the layer with sigmoid function):
+data_512_16={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 512 nodes first layer and 8 nodes last layer (expect the layer with sigmoid function):
+data_512_8={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 1024 nodes first layer and 64 nodes last layer (expect the layer with sigmoid function):
+data_1024_64={'loss': 0.6931902766227722, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 1024 nodes first layer and 32 nodes last layer (expect the layer with sigmoid function):
+data_1024_32={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 1024 nodes first layer and 16 nodes last layer (expect the layer with sigmoid function):
+data_1024_16={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 1024 nodes first layer and 8 nodes last layer (expect the layer with sigmoid function):
+data_1024_8={'loss': 0.6931906342506409, 'accuracy': 0.48392483592033386, 'precision': 0.0, 'recall': 0.0, 'f1-score': 0.0, 'f2-score': 0.0}
+//////////////////////////////
+
+
+Test results with 256 nodes first layer and 64 nodes last layer (expect the layer with sigmoid function):
+data_256_64={'loss': 0.7286839485168457, 'accuracy': 0.9052191972732544, 'precision': 0.9352890253067017, 'recall': 0.8770226240158081, 'f1-score': 0.9052186834256324, 'f2-score': 0.8880876059285224}
+
+
+////LAST MODEL CREATED PERMISSIONS
+Test results with 256 nodes first layer and 32 nodes last layer (expect the layer with sigmoid function):
+data_256_32={'loss': 0.36113211512565613, 'accuracy': 0.9185803532600403, 'precision': 0.9370503425598145, 'recall': 0.8928877711296082, 'f1-score': 0.9144356613238336, 'f2-score': 0.9013839058485662}
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+

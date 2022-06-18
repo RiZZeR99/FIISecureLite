@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appsScannedList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/appScannedIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/Default_Description_Icon" />
+
+
+    <TextView
+        android:id="@+id/appScannedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appScannedIcon"
+        android:layout_centerInParent="true"
+        android:text="@string/Default_App_Name"
+        android:textAlignment="center" />
+
+
+    <ImageView
+        android:id="@+id/appScannedThreatLevel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/Default_Description_Icon"
+        android:src="@mipmap/safe" />
+
+
+</RelativeLayout>

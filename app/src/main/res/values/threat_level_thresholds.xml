@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="safe_threshold">40</integer>
+    <integer name="warning_threshold">60</integer>
+    <integer name="risk_threshold">80</integer>
+    <integer name="malware_threshold">100</integer>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Antivirus</string>
+    <string name="progress">%1$d%% analyzed</string>
+    <string name="scan">Scan</string>
+    <string name="scanFull">Scan all apps</string>
+    <string name="back">Back</string>
+    <string name="Default_Description_Icon">Icon_APP</string>
+    <string name="Default_App_Name">App name</string>
+    <string name="fullScanDevice">FullScan</string>
+    <string name="scannedApps">LIST_SCANNED</string>
+    <string name="safe_apps">Safe Apps</string>
+    <string name="warning_apps">Warning Apps: %1$d</string>
+    <string name="risky_apps">Risky Apps: %1$d</string>
+    <string name="malware_apps">Malware Apps: %1$d</string>
+    <string name="results_report">Scanning device results</string>
+    <string name="home_string">Home</string>
+    <string name="stop">Stop</string>
+    <string name="individual_app_message">INDIVIDUAL_APP</string>
+    <string name="thread_level">Application thread level:</string>
+    <string name="permissions_result">Permissions probability scan result: %1$f</string>
+    <string name="receivers_result">Receivers probability scan result: %1$f</string>
+    <string name="services_result">Services probability scan result: %1$f</string>
+    <string name="channel_description">Channel used for sending requests to make a notification about scanning devices</string>
+    <string name="new_installed_app">Scanning new installed app</string>
+    <string name="progress_scan_new_app">Scanning %1$s …</string>
+    <string name="result_app_safe">The application %1$s is safe to use</string>
+    <string name="result_app_warning">The application %1$s may pose a potential risk to use</string>
+    <string name="result_app_risky">The application %1$s is strongly probably to affect your device</string>
+    <string name="result_app_malware">The application %1$s was detected as a malware. Please uninstall now!</string>
+    <string name="background_scan_result">Scan result</string>
+    <string name="scan_specific_apk">Scan specific APK</string>
+</resources>

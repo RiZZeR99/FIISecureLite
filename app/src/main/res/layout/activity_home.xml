@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonScanFull"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:onClick="scanAction"
+            android:text="@string/scan" />
+
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="182dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="200px"
+            android:onClick="scanFullDevice"
+            android:text="@string/scanFull" />
+
+
+        <Button
+            android:id="@+id/buttonScanFile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_marginTop="200px"
+            android:onClick="scanSpecificApk"
+            android:text="@string/scan_specific_apk" />
+
+    </LinearLayout>
+</RelativeLayout>
