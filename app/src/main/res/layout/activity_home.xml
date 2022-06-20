@@ -26,16 +26,5 @@
             android:onClick="scanFullDevice"
             android:text="@string/scanFull" />
 
-
-        <Button
-            android:id="@+id/buttonScanFile"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:visibility="invisible"
-            android:layout_marginTop="200px"
-            android:onClick="scanSpecificApk"
-            android:text="@string/scan_specific_apk" />
-
     </LinearLayout>
 </RelativeLayout>

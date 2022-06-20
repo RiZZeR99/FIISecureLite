@@ -64,7 +64,7 @@ data_256_64={'loss': 0.7286839485168457, 'accuracy': 0.9052191972732544, 'precis
 
 ////LAST MODEL CREATED PERMISSIONS
 Test results with 256 nodes first layer and 32 nodes last layer (expect the layer with sigmoid function):
-data_256_32={'loss': 0.36113211512565613, 'accuracy': 0.9185803532600403, 'precision': 0.9370503425598145, 'recall': 0.8928877711296082, 'f1-score': 0.9144356613238336, 'f2-score': 0.9013839058485662}
+data_256_32={'loss': 0.36113211512565613, 'accuracy': 0.9185803532600403, 'precision': 0.9370503425598145, 'recall': 0.8928877711296082, 'f1-score': 0.9144356613238336, 'f2-score': 0.9013839058485662} --- folosit --- final
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
