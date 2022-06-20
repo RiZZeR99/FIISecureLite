@@ -13,16 +13,11 @@ public class HomeLogic {
 
     public HomeLogic(HomeActivity homeActivity) {
         this.activity = homeActivity;
-
     }
 
     public void configureDaemonForScan() {
         Intent intent = new Intent(activity, NewPackageDaemon.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            activity.startForegroundService(intent);
-        } else {
-            activity.startService(intent);
-        }
+        activity.startService(intent);
     }
 
     public void scanDevice(boolean fullScan) {

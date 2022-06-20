@@ -161,7 +161,13 @@ public class ScanLogic {
 
     private void showReport(List<ScannedAppInfo> scannedApps) {
         Intent reportIntent = new Intent(activity, ReportActivity.class);
+        List<ScannedAppInfo> pain = new ArrayList<>();
+        for (int i = 0; i < scannedApps.size(); i++) {
+            pain.add(scannedApps.get(i));
+            scannedApps.remove(scannedApps.get(i));
+        }//WHY??????
         reportIntent.putParcelableArrayListExtra(activity.getString(R.string.scannedApps), (ArrayList<? extends Parcelable>) scannedApps);
+        reportIntent.putParcelableArrayListExtra(activity.getString(R.string.scannedApps), (ArrayList<? extends Parcelable>) pain);
         activity.startActivity(reportIntent);
         activity.finish();
     }

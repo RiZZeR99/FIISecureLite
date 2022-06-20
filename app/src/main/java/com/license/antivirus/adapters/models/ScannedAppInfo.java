@@ -8,7 +8,7 @@ import com.license.antivirus.scanner.ScanResult;
 
 import java.io.Serializable;
 
-public class ScannedAppInfo implements Parcelable, Serializable {
+public class ScannedAppInfo implements Parcelable {
     private Drawable icon;
     private String packageName;
     private final ScanResult result;

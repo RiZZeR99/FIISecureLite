@@ -152,6 +152,7 @@ public class ScannerApplication {
 
         } catch (IOException | ParserConfigurationException | SAXException e) {
             System.out.println("Exception occurred when analyzing the app");
+            scanResult = ScanResult.returnDefaultSafe(ApplicationThreatLevel.Warning);
             e.printStackTrace();
         }
         return scanResult;
