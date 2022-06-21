@@ -5,6 +5,7 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.res.AssetFileDescriptor;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Parcelable;
 
 import androidx.appcompat.content.res.AppCompatResources;
@@ -28,6 +29,7 @@ import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ScanLogic {
 
@@ -161,13 +163,14 @@ public class ScanLogic {
 
     private void showReport(List<ScannedAppInfo> scannedApps) {
         Intent reportIntent = new Intent(activity, ReportActivity.class);
-        List<ScannedAppInfo> pain = new ArrayList<>();
-        for (int i = 0; i < scannedApps.size(); i++) {
-            pain.add(scannedApps.get(i));
-            scannedApps.remove(scannedApps.get(i));
-        }//WHY??????
+        List<ScannedAppInfo> list = new ArrayList<>();
+        for (ScannedAppInfo item : scannedApps) {
+            if (item.getScanResult().getLevel() != ApplicationThreatLevel.Safe) {
+                list.add(item);
+            }
+        }
+        scannedApps = list;
         reportIntent.putParcelableArrayListExtra(activity.getString(R.string.scannedApps), (ArrayList<? extends Parcelable>) scannedApps);
-        reportIntent.putParcelableArrayListExtra(activity.getString(R.string.scannedApps), (ArrayList<? extends Parcelable>) pain);
         activity.startActivity(reportIntent);
         activity.finish();
     }
