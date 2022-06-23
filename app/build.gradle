@@ -37,7 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation group: 'net.dongliu', name: 'apk-parser', version: '2.6.10'
-//    implementation group: 'com.bihe0832.android', name: 'lib-utils-apk', version: '4.20.0'
     implementation 'org.tensorflow:tensorflow-lite:2.8.0'
 
 }
