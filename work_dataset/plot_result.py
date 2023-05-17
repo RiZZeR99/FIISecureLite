@@ -129,8 +129,6 @@ def plot_receivers():
     
     plt.show()
     
-    
-
 
 def plot_services():
     # size 855 without classification column

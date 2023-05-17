@@ -23,11 +23,6 @@ public class HomeActivity extends AppCompatActivity implements UILoader {
         controller.configureDaemonForScan();
     }
 
-
-    @Override
-    public void onBackPressed() {
-    }
-
     @Override
     public void prepareUIComponents() {
     }

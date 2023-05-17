@@ -24,5 +24,6 @@ public class HomeLogic {
         Intent scanIntent = new Intent(activity, ScanActivity.class);
         scanIntent.putExtra(activity.getString(R.string.fullScanDevice), fullScan);
         activity.startActivity(scanIntent);
+        activity.finish();
     }
 }
