@@ -79,12 +79,16 @@ public class ScannerApplication {
     }
 
     private MappedByteBuffer importModelFromAsset(String model) throws IOException {
-        AssetFileDescriptor fileDescriptor = context.getAssets().openFd(model);
-        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
-        FileChannel fileChannel = inputStream.getChannel();
-        long startOffset = fileDescriptor.getStartOffset();
-        long declaredLength = fileDescriptor.getDeclaredLength();
-        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
+        try (AssetFileDescriptor fileDescriptor = context.getAssets().openFd(model)) {
+            try (FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor())) {
+                try (FileChannel fileChannel = inputStream.getChannel()) {
+                    long startOffset = fileDescriptor.getStartOffset();
+                    long declaredLength = fileDescriptor.getDeclaredLength();
+                    return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
+                }
+
+            }
+        }
     }
 
     private void readFile(String fileName) {
@@ -211,13 +215,13 @@ public class ScannerApplication {
     private int checkInputToHaveData(FloatBuffer buffer) {
         int sum = 0;
         for (int i = 0; i < buffer.array().length; i++) {
-            sum += buffer.array()[i];
+            sum += (int) buffer.array()[i];
         }
         return sum;
     }
 
     private double runPermissionsModel() {
-        if (permissionsApp.size() > 0) {
+        if (!permissionsApp.isEmpty()) {
             FloatBuffer outputPermissions = FloatBuffer.allocate(MAX_PERMISSIONS);
             modelPermissions.run(inputPermissions, outputPermissions);
             return outputPermissions.array()[0];
@@ -226,7 +230,7 @@ public class ScannerApplication {
     }
 
     private double runReceiversModel() {
-        if (receiversApp.size() > 0) {
+        if (!receiversApp.isEmpty()) {
             FloatBuffer outputReceivers = FloatBuffer.allocate(MAX_RECEIVERS);
             modelReceivers.run(inputReceivers, outputReceivers);
             return outputReceivers.array()[0];
@@ -235,7 +239,7 @@ public class ScannerApplication {
     }
 
     private double runServicesModel() {
-        if (servicesApp.size() > 0) {
+        if (!servicesApp.isEmpty()) {
             FloatBuffer outputServices = FloatBuffer.allocate(MAX_SERVICES);
             modelServices.run(inputServices, outputServices);
             return outputServices.array()[0];
